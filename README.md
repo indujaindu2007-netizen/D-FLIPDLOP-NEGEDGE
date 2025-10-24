@@ -29,16 +29,46 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 **Procedure**
 
 /* write all the steps invloved */
+1.Define Module: Define a Verilog module for the D flip-flop with inputs (D, CLK) and outputs (Q, Q_bar).
+
+2.Declare Inputs and Outputs: Declare input and output ports for the module.
+
+3.Implement Flip-Flop Logic: Write Verilog code to implement the D flip-flop logic based on its functional table. Use a synchronous always @(posedge CLK) block to trigger the flip-flop on the positive edge of the clock signal.
+
+4.Simulate Using Testbench: Write a Verilog testbench to simulate the behavior of the D flip-flop under different input conditions.
+
+5.Apply Input Stimuli: In the testbench, apply various combinations of input stimuli (D, CLK) to cover all possible input states.
+
+6.Verify Output Behavior: Verify that the output behavior of the D flip-flop matches the expected behavior defined by its functional table.
+
+7.Check for Race Conditions: Ensure that there are no race conditions or undefined states in the design by analyzing the timing and sequence of input changes
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: INDUJA R RegisterNumber: 25001726
 */
+```
+module d_ff(D,Clock,reset,Q);
+input D,reset,Clock;
+output reg Q;
+always @ (negedge Clock)
+if(!reset)
+Q <= 0;
+else
+Q <= D;
+endmodule
+```
 
 **RTL LOGIC FOR FLIPFLOPS**
+<img width="728" height="273" alt="Screenshot 2025-10-24 133024" src="https://github.com/user-attachments/assets/6430fe4c-8b83-4c13-a35f-1935cd29e31e" />
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+<img width="1919" height="1018" alt="Screenshot 2025-10-24 133220" src="https://github.com/user-attachments/assets/0a9478b7-70bd-4f7d-b408-a3cef21bdc4f" />
+
+**RESULT**
+Thus the program to implement a D flipflop using verilog and validating their functionality using their functional tables
 
 
-**RESULTS**
+
