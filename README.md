@@ -65,7 +65,8 @@ endmodule
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-<img width="1919" height="1018" alt="Screenshot 2025-10-24 133220" src="https://github.com/user-attachments/assets/0a9478b7-70bd-4f7d-b408-a3cef21bdc4f" />
+<img width="1919" height="1018" alt="Screenshot 2025-10-27 000600" src="https://github.com/user-attachments/assets/760d6fe1-e1fc-4ffe-bf8f-0d90ea8fb133" />
+
 
 **RESULT**
 Thus the program to implement a D flipflop using verilog and validating their functionality using their functional tables
